@@ -1,0 +1,12 @@
+count=0
+fname=input("enter file name")
+fhan=open(fname)
+for line in fhan:
+    if line.startswith('From'):
+        if line.startswith('From:'):
+            continue
+        else:
+            count=count+1
+            lists=line.split()
+            print(lists[1])
+print('There were',count,'line in the file')
