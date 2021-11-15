@@ -1,0 +1,4 @@
+text = "X-DSPAM-CONFIDENCE: 0.8475";
+text = text.replace(" "," ")
+sli=text.find(":")
+print(float(text[sli+1:]))
